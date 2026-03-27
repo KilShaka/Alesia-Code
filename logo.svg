@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="640" viewBox="0 0 640 640" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Alesia Code Laurel Logo</title>
+  <desc id="desc">Minimal laurel wreath logo for Alesia Code.</desc>
+  <defs>
+    <linearGradient id="gold" x1="320" y1="80" x2="320" y2="560" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E5BC63"/>
+      <stop offset="1" stop-color="#B87D16"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="320" cy="320" r="294" fill="#0E1526"/>
+  <circle cx="320" cy="320" r="280" stroke="#22304A" stroke-width="10"/>
+
+  <path d="M268 160C224 190 193 240 188 301C184 352 199 402 230 446" stroke="url(#gold)" stroke-width="14" stroke-linecap="round"/>
+  <path d="M372 160C416 190 447 240 452 301C456 352 441 402 410 446" stroke="url(#gold)" stroke-width="14" stroke-linecap="round"/>
+
+  <g fill="url(#gold)">
+    <ellipse cx="220" cy="240" rx="16" ry="26" transform="rotate(-34 220 240)"/>
+    <ellipse cx="205" cy="275" rx="15" ry="24" transform="rotate(-28 205 275)"/>
+    <ellipse cx="199" cy="312" rx="14" ry="22" transform="rotate(-20 199 312)"/>
+    <ellipse cx="203" cy="350" rx="13" ry="21" transform="rotate(-10 203 350)"/>
+    <ellipse cx="216" cy="387" rx="13" ry="21" transform="rotate(0 216 387)"/>
+    <ellipse cx="238" cy="421" rx="13" ry="21" transform="rotate(10 238 421)"/>
+
+    <ellipse cx="420" cy="240" rx="16" ry="26" transform="rotate(34 420 240)"/>
+    <ellipse cx="435" cy="275" rx="15" ry="24" transform="rotate(28 435 275)"/>
+    <ellipse cx="441" cy="312" rx="14" ry="22" transform="rotate(20 441 312)"/>
+    <ellipse cx="437" cy="350" rx="13" ry="21" transform="rotate(10 437 350)"/>
+    <ellipse cx="424" cy="387" rx="13" ry="21" transform="rotate(0 424 387)"/>
+    <ellipse cx="402" cy="421" rx="13" ry="21" transform="rotate(-10 402 421)"/>
+  </g>
+
+  <path d="M270 470C286 485 302 494 320 494C338 494 354 485 370 470" stroke="url(#gold)" stroke-width="12" stroke-linecap="round"/>
+</svg>
