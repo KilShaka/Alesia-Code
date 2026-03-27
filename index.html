@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alesia Code | Website Development & SEO</title>
-    <meta name="description" content="Alesia Code builds high-performing websites and maximizes your visibility on Google through targeted SEO." />
+    <title>Alesia Code | Création de sites web & SEO</title>
+    <meta name="description" content="Alesia Code crée des sites web performants et améliore votre visibilité sur Google grâce à un SEO ciblé." />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,7 +20,13 @@
           <img src="logo.svg" alt="Alesia Code logo" class="nav__logo-mark" />
           <span class="nav__logo-text">Alesia<span>Code</span></span>
         </a>
-        <a href="#contact" class="btn btn--sm">Get in touch</a>
+        <div class="nav__actions">
+          <div class="lang-switch" role="group" aria-label="Language switcher">
+            <button type="button" class="lang-switch__btn is-active" data-lang="fr">FR</button>
+            <button type="button" class="lang-switch__btn" data-lang="en">EN</button>
+          </div>
+          <a href="#contact" class="btn btn--sm" data-i18n="navCta">Nous contacter</a>
+        </div>
       </div>
     </nav>
 
@@ -32,18 +38,17 @@
         <div class="hero__grid"></div>
       </div>
       <div class="container hero__content">
-        <p class="badge reveal">Web &amp; SEO Agency</p>
+        <p class="badge reveal" data-i18n="heroBadge">Agence Web &amp; SEO</p>
         <h1 class="hero__title reveal">
-          Your website,<br />
-          <span class="gradient-text">built to convert.</span>
+          <span data-i18n="heroTitleLine1">Votre site internet,</span><br />
+          <span class="gradient-text" data-i18n="heroTitleLine2">pensé pour convertir.</span>
         </h1>
-        <p class="hero__sub reveal">
-          We build fast, professional websites and rank them on Google —
-          so your business grows while you focus on what you do best.
+        <p class="hero__sub reveal" data-i18n="heroSub">
+          Nous créons des sites professionnels et rapides, puis nous les positionnons sur Google pour faire grandir votre activité.
         </p>
         <div class="hero__actions reveal">
-          <a href="#contact" class="btn btn--primary">Start a project</a>
-          <a href="#services" class="btn btn--ghost">Our services</a>
+          <a href="#contact" class="btn btn--primary" data-i18n="heroPrimaryCta">Démarrer un projet</a>
+          <a href="#services" class="btn btn--ghost" data-i18n="heroSecondaryCta">Nos services</a>
         </div>
       </div>
       <div class="hero__scroll"><span></span></div>
@@ -53,9 +58,9 @@
     <section class="section" id="services">
       <div class="container">
         <div class="section-header reveal">
-          <p class="section-eyebrow">What we do</p>
-          <h2 class="section-title">End-to-end web expertise</h2>
-          <p class="section-sub">From a blank page to the top of Google, we cover the full journey.</p>
+          <p class="section-eyebrow" data-i18n="servicesEyebrow">Ce que nous faisons</p>
+          <h2 class="section-title" data-i18n="servicesTitle">Une expertise web de bout en bout</h2>
+          <p class="section-sub" data-i18n="servicesSub">De l'idée initiale à la première page Google, nous gérons tout le parcours.</p>
         </div>
         <div class="services-grid">
 
@@ -66,8 +71,8 @@
                 <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2z"/>
               </svg>
             </div>
-            <h3>Business Websites</h3>
-            <p>Clean, fast, credibility-building sites that turn first impressions into new clients.</p>
+            <h3 data-i18n="service1Title">Sites vitrines</h3>
+            <p data-i18n="service1Desc">Des sites clairs, rapides et crédibles qui transforment les visiteurs en clients.</p>
           </div>
 
           <div class="card reveal">
@@ -78,8 +83,8 @@
                 <path d="M16 10a4 4 0 0 1-8 0"/>
               </svg>
             </div>
-            <h3>E-commerce</h3>
-            <p>Full online stores built for sales — optimized checkout, mobile-first, and ready to scale.</p>
+            <h3 data-i18n="service2Title">E-commerce</h3>
+            <p data-i18n="service2Desc">Des boutiques en ligne optimisées pour vendre, mobile-first et prêtes à évoluer.</p>
           </div>
 
           <div class="card reveal">
@@ -89,8 +94,8 @@
                 <polyline points="8 6 2 12 8 18"/>
               </svg>
             </div>
-            <h3>Custom Development</h3>
-            <p>Bespoke solutions for complex products — built exactly the way you need them.</p>
+            <h3 data-i18n="service3Title">Développement sur mesure</h3>
+            <p data-i18n="service3Desc">Des solutions personnalisées pour vos besoins spécifiques et vos produits complexes.</p>
           </div>
 
           <div class="card reveal">
@@ -99,8 +104,8 @@
                 <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
               </svg>
             </div>
-            <h3>Search Engine Optimization</h3>
-            <p>Keyword research, on-page SEO, and technical audits to get you ranking where it counts.</p>
+            <h3 data-i18n="service4Title">Référencement naturel (SEO)</h3>
+            <p data-i18n="service4Desc">Recherche de mots-clés, SEO on-page et audits techniques pour vous faire remonter sur Google.</p>
           </div>
 
           <div class="card reveal">
@@ -109,8 +114,8 @@
                 <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/>
               </svg>
             </div>
-            <h3>Performance Optimization</h3>
-            <p>Speed audits, Core Web Vitals fixes, and image optimization for a blazing-fast experience.</p>
+            <h3 data-i18n="service5Title">Optimisation des performances</h3>
+            <p data-i18n="service5Desc">Amélioration de la vitesse, Core Web Vitals et optimisation des images pour une expérience fluide.</p>
           </div>
 
         </div>
@@ -121,24 +126,24 @@
     <section class="section section--dark" id="about">
       <div class="container">
         <div class="section-header reveal">
-          <p class="section-eyebrow">Why Alesia Code</p>
-          <h2 class="section-title">Built for growth</h2>
+          <p class="section-eyebrow" data-i18n="whyEyebrow">Pourquoi Alesia Code</p>
+          <h2 class="section-title" data-i18n="whyTitle">Pensé pour votre croissance</h2>
         </div>
         <div class="pillars">
           <div class="pillar reveal">
             <div class="pillar__num">01</div>
-            <h3>Fast delivery</h3>
-            <p>We ship on time, every time — so your business gets online without endless delays.</p>
+            <h3 data-i18n="pillar1Title">Livraison rapide</h3>
+            <p data-i18n="pillar1Desc">Nous livrons dans les délais pour mettre votre activité en ligne sans attente inutile.</p>
           </div>
           <div class="pillar reveal">
             <div class="pillar__num">02</div>
-            <h3>Conversion first</h3>
-            <p>Every layout, copy, and CTA is designed with a single goal: turning visitors into customers.</p>
+            <h3 data-i18n="pillar2Title">Conversion d'abord</h3>
+            <p data-i18n="pillar2Desc">Chaque élément est conçu pour transformer vos visiteurs en clients.</p>
           </div>
           <div class="pillar reveal">
             <div class="pillar__num">03</div>
-            <h3>Transparent partnership</h3>
-            <p>You're always in the loop. No surprises, no jargon — just clear, honest communication.</p>
+            <h3 data-i18n="pillar3Title">Partenariat transparent</h3>
+            <p data-i18n="pillar3Desc">Vous êtes informé à chaque étape, avec une communication claire et sans jargon.</p>
           </div>
         </div>
       </div>
@@ -148,9 +153,9 @@
     <section class="section section--contact" id="contact">
       <div class="container">
         <div class="cta-box reveal">
-          <p class="section-eyebrow">Let's talk</p>
-          <h2 class="section-title">Ready to build something great?</h2>
-          <p class="section-sub">Tell us about your project — we'll reply within 24 hours.</p>
+          <p class="section-eyebrow" data-i18n="contactEyebrow">Parlons de votre projet</p>
+          <h2 class="section-title" data-i18n="contactTitle">Prêt à créer quelque chose de solide ?</h2>
+          <p class="section-sub" data-i18n="contactSub">Parlez-nous de votre besoin, nous répondons sous 24 heures.</p>
           <a href="mailto:contact@alesiacode.com" class="btn btn--primary btn--lg">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
@@ -166,13 +171,120 @@
     <footer class="footer">
       <div class="container footer__inner">
         <a href="#" class="nav__logo">Alesia<span>Code</span></a>
-        <p>© <span id="year"></span> Alesia Code. All rights reserved.</p>
+        <p data-i18n="footerText">© <span id="year"></span> Alesia Code. Tous droits réservés.</p>
       </div>
     </footer>
 
     <script>
       // Year
       document.getElementById('year').textContent = new Date().getFullYear();
+
+      const translations = {
+        fr: {
+          pageTitle: 'Alesia Code | Création de sites web & SEO',
+          pageDescription: 'Alesia Code crée des sites web performants et améliore votre visibilité sur Google grâce à un SEO ciblé.',
+          navCta: 'Nous contacter',
+          heroBadge: 'Agence Web & SEO',
+          heroTitleLine1: 'Votre site internet,',
+          heroTitleLine2: 'pensé pour convertir.',
+          heroSub: 'Nous créons des sites professionnels et rapides, puis nous les positionnons sur Google pour faire grandir votre activité.',
+          heroPrimaryCta: 'Démarrer un projet',
+          heroSecondaryCta: 'Nos services',
+          servicesEyebrow: 'Ce que nous faisons',
+          servicesTitle: 'Une expertise web de bout en bout',
+          servicesSub: "De l'idée initiale à la première page Google, nous gérons tout le parcours.",
+          service1Title: 'Sites vitrines',
+          service1Desc: 'Des sites clairs, rapides et crédibles qui transforment les visiteurs en clients.',
+          service2Title: 'E-commerce',
+          service2Desc: 'Des boutiques en ligne optimisées pour vendre, mobile-first et prêtes à évoluer.',
+          service3Title: 'Développement sur mesure',
+          service3Desc: 'Des solutions personnalisées pour vos besoins spécifiques et vos produits complexes.',
+          service4Title: 'Référencement naturel (SEO)',
+          service4Desc: 'Recherche de mots-clés, SEO on-page et audits techniques pour vous faire remonter sur Google.',
+          service5Title: 'Optimisation des performances',
+          service5Desc: 'Amélioration de la vitesse, Core Web Vitals et optimisation des images pour une expérience fluide.',
+          whyEyebrow: 'Pourquoi Alesia Code',
+          whyTitle: 'Pensé pour votre croissance',
+          pillar1Title: 'Livraison rapide',
+          pillar1Desc: 'Nous livrons dans les délais pour mettre votre activité en ligne sans attente inutile.',
+          pillar2Title: "Conversion d'abord",
+          pillar2Desc: 'Chaque élément est conçu pour transformer vos visiteurs en clients.',
+          pillar3Title: 'Partenariat transparent',
+          pillar3Desc: 'Vous êtes informé à chaque étape, avec une communication claire et sans jargon.',
+          contactEyebrow: 'Parlons de votre projet',
+          contactTitle: 'Prêt à créer quelque chose de solide ?',
+          contactSub: 'Parlez-nous de votre besoin, nous répondons sous 24 heures.',
+          footerText: '© <span id="year"></span> Alesia Code. Tous droits réservés.'
+        },
+        en: {
+          pageTitle: 'Alesia Code | Website Development & SEO',
+          pageDescription: 'Alesia Code builds high-performing websites and maximizes your visibility on Google through targeted SEO.',
+          navCta: 'Get in touch',
+          heroBadge: 'Web & SEO Agency',
+          heroTitleLine1: 'Your website,',
+          heroTitleLine2: 'built to convert.',
+          heroSub: 'We build fast, professional websites and rank them on Google so your business grows while you focus on what you do best.',
+          heroPrimaryCta: 'Start a project',
+          heroSecondaryCta: 'Our services',
+          servicesEyebrow: 'What we do',
+          servicesTitle: 'End-to-end web expertise',
+          servicesSub: 'From a blank page to the top of Google, we cover the full journey.',
+          service1Title: 'Business Websites',
+          service1Desc: 'Clean, fast, credibility-building sites that turn first impressions into new clients.',
+          service2Title: 'E-commerce',
+          service2Desc: 'Full online stores built for sales, optimized checkout, mobile-first, and ready to scale.',
+          service3Title: 'Custom Development',
+          service3Desc: 'Bespoke solutions for complex products built exactly the way you need them.',
+          service4Title: 'Search Engine Optimization',
+          service4Desc: 'Keyword research, on-page SEO, and technical audits to get you ranking where it counts.',
+          service5Title: 'Performance Optimization',
+          service5Desc: 'Speed audits, Core Web Vitals fixes, and image optimization for a blazing-fast experience.',
+          whyEyebrow: 'Why Alesia Code',
+          whyTitle: 'Built for growth',
+          pillar1Title: 'Fast delivery',
+          pillar1Desc: 'We ship on time, every time, so your business gets online without endless delays.',
+          pillar2Title: 'Conversion first',
+          pillar2Desc: 'Every layout, copy, and CTA is designed with a single goal: turning visitors into customers.',
+          pillar3Title: 'Transparent partnership',
+          pillar3Desc: "You're always in the loop. No surprises, no jargon, just clear, honest communication.",
+          contactEyebrow: "Let's talk",
+          contactTitle: 'Ready to build something great?',
+          contactSub: "Tell us about your project. We'll reply within 24 hours.",
+          footerText: '© <span id="year"></span> Alesia Code. All rights reserved.'
+        }
+      };
+
+      const metaDescription = document.querySelector('meta[name="description"]');
+      const langButtons = document.querySelectorAll('.lang-switch__btn');
+
+      function applyLanguage(lang) {
+        const activeLang = translations[lang] ? lang : 'fr';
+        const dict = translations[activeLang];
+
+        document.documentElement.lang = activeLang;
+        document.title = dict.pageTitle;
+        metaDescription.setAttribute('content', dict.pageDescription);
+
+        document.querySelectorAll('[data-i18n]').forEach((el) => {
+          const key = el.getAttribute('data-i18n');
+          if (!dict[key]) return;
+          if (key === 'footerText') {
+            el.innerHTML = dict[key];
+          } else {
+            el.textContent = dict[key];
+          }
+        });
+
+        document.getElementById('year').textContent = new Date().getFullYear();
+        langButtons.forEach((btn) => btn.classList.toggle('is-active', btn.dataset.lang === activeLang));
+        localStorage.setItem('preferredLang', activeLang);
+      }
+
+      langButtons.forEach((btn) => {
+        btn.addEventListener('click', () => applyLanguage(btn.dataset.lang));
+      });
+
+      applyLanguage(localStorage.getItem('preferredLang') || 'fr');
 
       // Scroll-reveal via IntersectionObserver
       const observer = new IntersectionObserver((entries) => {

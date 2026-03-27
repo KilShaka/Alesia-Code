@@ -168,6 +168,11 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.nav__actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+}
 .nav__logo {
   display: inline-flex;
   align-items: center;
@@ -188,6 +193,36 @@ body {
   line-height: 1;
 }
 .nav__logo span { color: var(--primary); }
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.2rem;
+  border-radius: 999px;
+  border: 1px solid var(--card-border);
+  background: rgba(255, 255, 255, 0.04);
+}
+.lang-switch__btn {
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  font-family: var(--font);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 0.34rem 0.56rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.22s ease;
+}
+.lang-switch__btn:hover {
+  color: var(--text);
+}
+.lang-switch__btn.is-active {
+  color: #fff;
+  background: var(--gradient);
+  box-shadow: 0 6px 16px rgba(0, 201, 141, 0.24);
+}
 
 /* ─────────────────────────────────────────
    Hero
@@ -451,6 +486,8 @@ body {
    Responsive
 ───────────────────────────────────────── */
 @media (max-width: 600px) {
+  .nav__actions { gap: 0.45rem; }
+  .lang-switch__btn { padding: 0.3rem 0.5rem; }
   .hero { padding-top: 7rem; }
   .hero__actions  { flex-direction: column; align-items: flex-start; }
   .cta-box        { padding: 3rem 1.5rem; }
